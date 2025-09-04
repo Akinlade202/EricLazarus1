@@ -1,0 +1,47 @@
+body{
+   font-family: sans-serif;
+}
+.container>div{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207 232 220);
+    border: 2px solid rgb(79 185 227);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main1 main1"
+    "sidebar main2 main2"
+    "footer footer footer";
+}
+
+.one{
+    grid-area: header;
+}
+
+.two{
+    grid-area: sidebar;
+}
+
+.three{
+    grid-area: main1;
+}
+
+.four{
+    grid-area: main2;
+}
+
+.five{
+    grid-area: footer;
+}
+
+
+p{
+    color: green;
+}
+
+.test{
+    color: blue;
+}
